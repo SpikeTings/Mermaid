@@ -1,0 +1,30 @@
+{
+	"name": "spiketings_mermaidjs",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"babel-core": "^6.26.3",
+		"babel-loader": "^8.0.6",
+		"mattermost-redux": "*",
+		"react": "16.8.6",
+		"react-dom": "16.8.6",
+		"react-mermaid": "yanick/react-mermaid",
+		"react-redux": "5.1.1"
+	},
+	"scripts": {
+		"build": "webpack --mode=none --config webpack.config.js",
+		"mattermost": "cp dist/main.js plugin.json com.spikeassociates.tings-mermaid && rm tingmermaid.tar.gz && tar cvzf tingmermaid.tar.gz com.spikeassociates.tings-mermaid",
+		"bundle": "yarn build && yarn mattermost"
+	},
+	"devDependencies": {
+		"@babel/cli": "7.5.5",
+		"@babel/core": "7.5.5",
+		"@babel/plugin-proposal-class-properties": "7.5.5",
+		"@babel/plugin-proposal-object-rest-spread": "7.5.5",
+		"@babel/plugin-syntax-dynamic-import": "7.2.0",
+		"@babel/preset-env": "7.5.5",
+		"@babel/preset-react": "7.0.0",
+		"@babel/preset-typescript": "7.3.3",
+		"webpack-cli": "^3.3.10"
+	}
+}

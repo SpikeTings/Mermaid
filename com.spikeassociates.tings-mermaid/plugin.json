@@ -1,0 +1,8 @@
+{
+    "id": "com.spikeassociates.tings-mermaid",
+    "name": "Mermaid ting",
+    "description": "Support for Mermaid graphs in messages",
+    "webapp": {
+        "bundle_path": "main.js"
+    }
+}
