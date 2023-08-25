@@ -37,6 +37,7 @@ module.exports = {
     },
     externals: {
         react: 'React',
+        'react-redux': 'ReactRedux',
     },
     output: {
         path: path.join(__dirname, '/dist'),
