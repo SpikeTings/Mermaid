@@ -18,7 +18,11 @@ const mapStateToProps = (state, ownProps) => {
   const postId = ownProps.postId.replace("user-activity-", "");
   const post = getPost(state, postId);
 
+  console.log('teeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeest');
+
   try {
+    console.log('rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr',post.props);
+
     if (post.props && post.props.mermaidData) {
       return { mermaidData: post.props.mermaidData };
     }

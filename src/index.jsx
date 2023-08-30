@@ -1,8 +1,8 @@
-// import PostMessageMermaid from './PostMessageMermaid';
+import PostMessageMermaid from './PostMessageMermaid';
 
 class tingsMermaid {
     initialize(registry, store) {
-        registry.registerPostMessageAttachmentComponent({});
+        registry.registerPostMessageAttachmentComponent(PostMessageMermaid);
     }
 
     uninitialize() {
