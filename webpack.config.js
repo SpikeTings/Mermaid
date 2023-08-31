@@ -11,9 +11,6 @@ module.exports = {
         ],
         extensions: ['*', '.js', '.jsx'],
     },
-    node: {
-        fs: 'empty'
-    },
     module: {
         rules: [
             {
@@ -40,6 +37,7 @@ module.exports = {
     },
     externals: {
         react: 'React',
+        'react-redux': 'ReactRedux',
     },
     output: {
         path: path.join(__dirname, '/dist'),
