@@ -135,6 +135,7 @@ const PostMessageMermaid = ({
   const rnd = ((1 + Math.random()) * 0x10000 | 0).toString(16).substring(1);
   const name = "diagram" + rnd;
   return /*#__PURE__*/_react.default.createElement(_reactMermaid.default, {
+    name: name,
     chart: mermaidData
   });
 };
