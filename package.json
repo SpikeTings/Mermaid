@@ -7,9 +7,10 @@
     "babel-loader": "^8.0.6",
     "core-js": "^3.32.1",
     "mattermost-redux": "*",
+    "mermaid": "^10.4.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-mermaid": "github:yanick/react-mermaid",
+    "react-mermaid2": "^0.1.4",
     "react-redux": "^5.1.2"
   },
   "scripts": {
