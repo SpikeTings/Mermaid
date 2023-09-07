@@ -1,32 +1,28 @@
-	# Mermaid
-	mattermost mermaidjs plugin
+# Mermaid
+  mattermost mermaidjs plugin
 
 	This plugin expects to receive a message from outside MM with the payload of the markdown. Something like this:
 
-	```
 	'response_type' => 'in_channel',
 	'attachments' => array(array(
 		'color' => getMMMsgColor('blue'),
 		'title' => $q['title'],
 	)),
 	'props' => array('mermaidData'=>markdown here),
-	```
 
 	we are using it from a chatbot
 
 	the chartjs plugin is the same:
 
-	```
 	'response_type' => 'in_channel',
 	'attachments' => array(array(
 		'color' => getMMMsgColor('blue'),
 		'title' => $q['title'],
 	)),
 	'props' => array('chartdata'=>chartjs data here)),
-```
 
-we are doing this from [coreBOS](https://github.com/tsolucio/corebos) with [this extension](https://github.com/tsolucio/chatwithme)
-
+    we are doing this from [coreBOS](https://github.com/tsolucio/corebos) with [this extension](https://github.com/tsolucio/chatwithme)
+ 
 
 # ALSO
 This plugin allows you to integrate external services with your Mattermost instance using incoming webhooks.
@@ -66,7 +62,8 @@ To test the plugin, you'll need to send a payload to the webhook endpoint you cr
     "mermaidData": "graph TD;\n  A[Start] --> B[Process 3];\n  B --> C[Process 4];\n  C --> D[End];"
   }
 }
+
    
 ## ScreenShots
 
-![Sample Output](mermaid.png)
+![Sample Output](mermaidImag.png)
